@@ -1,0 +1,73 @@
+.btn-success {
+    background-color: #0013c0;
+    border:none;
+}
+
+.btn-success:hover {
+    background-color: #0013c0!important;
+}
+
+.pet {
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.bordered {
+    border: 1px solid black;
+}
+
+.active {
+    border: 3px solid yellow;
+}
+
+.red-bg {
+    background-color: red;
+}
+
+.pet-section td {
+    border-left: 2px solid #999;
+    padding: 0 1em;
+}
+
+.pet-section th {
+    text-align: center;
+    font-weight: normal;
+    font-size: 85%;
+    color: #666;
+}
+
+#logo {
+    width: 200px;
+}
+
+.container-services {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid black;
+}
+
+#map{
+    background-color: #dedede;
+    height: 400px;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.carousel-frame {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 1em;
+	padding-bottom: 2em;
+	border: 1px solid #666;
+	border-radius: 6px;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}

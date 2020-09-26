@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="https://kit.fontawesome.com/6da635e2db.js" crossorigin="anonymous"></script>
+    <title>The Fashion Pet</title>
+</head>
+<body>
+    <header>
+        <h1>The Fashion Pet</h1>
+        <img id="logo" src="img/puppy.jpg" alt="A dog">
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="register.html">Register</a>
+    </nav>
+    <main id ="register-main" class="container">
+        <h2>Register</h2>
+        <form action="#">
+
+            <p id ="pPetName" class="form-group">
+            <label for="petName">Pet Name:</label><br>
+            <input class="form-control" type="text" id="petName" name="petName"><br>
+            </p>
+
+            <label for="petAge">Pet Age:</label><br>
+            <input class="form-control" type="number" id="petAge" name="petAge"><br>
+
+            <label for="petType">Pet Type:</label><br>
+            <input class="form-control" type="text" id="petType" name="petType"><br>
+
+            <label for="petBreed">Breed:</label><br>
+            <input class="form-control" type="text" id="petBreed" name="petBreed"><br>
+
+            <div class="form-group">
+                <label for="color">Color:</label>
+                <select class="form-control" name="color" id="petColor">
+                    <option value="" disabled selected> ---- Select a Color ---- </option>
+                    <option value="White"> White</option>
+                    <option value="Brown"> Brown</option>
+                    <option value="Black"> Black</option>
+                    <option value="Yellow"> Yellow</option>
+                    <option value="Grey"> Grey</option>
+                    <option value="Red"> Red</option>
+                    <option value="Mixed"> Mixed</option>
+                </select>
+            </div><br>
+            
+            <label for="petGender">Gender:</label><br>
+            <input class="form-control" type="text" id="petGender" name="petGender"><br>
+
+            <label for="petOwner">Owner Name:</label><br>
+            <input class="form-control" type="text" id="petOwner" name="petOwner"><br>
+
+            <label for="petContact">Owner Contact:</label><br>
+            <input class="form-control" type="text" id="petContact" name="petContact"><br>
+
+            <div class="form-group">
+                <label for="services">Services:</label>
+                <select class="form-control" name="services" id="petService">
+                    <option value="" disabled selected> ---- Select a Service ---- </option>
+                    <option value="Shower"> Shower</option>
+                    <option value="Hair Cut"> Hair Cut</option>
+                    <option value="Full Service"> Full Service</option>
+                </select>
+            </div>
+
+            <label for="petPrice">Price:</label><br>
+            <input class="form-control" type="number" id="petPrice" name="petPrice"><br>
+
+            <div id ="salprof">
+
+            </div><br>
+
+            <input type="button" class="btn btn-success" value="Register" onclick="register();">
+
+        </form><br>
+
+        <div>
+            <input class="form-control" type="search" name="petSearch" id="petSearch">
+            <button id="search-btn" class="btn btn-success">Search</button>
+        </div><br>
+
+        <table class="pet-section" id="js-petSection">
+            <tr class="pet">
+                <th> Name </th>
+                <th> Age </th>
+                <th> Type </th>
+                <th> Breed </th>
+                <th> Color </th>
+                <th> Gender </th>
+                <th> Service </th>
+                <th> Price </th>
+                <th> Owner </th>
+                <th> Contact </th>
+                <th> Delete </th>
+            </tr>
+        </table>
+
+    </main>
+    <footer>
+        <p>The Fashion Pet</p>
+        <p>Av. University 245-K 25896, Monday to Friday from 8:00am to 5:00pm</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/directory.js"></script>
+</body>
+</html>
